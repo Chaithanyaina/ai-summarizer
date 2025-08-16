@@ -2,7 +2,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import summaryRoutes from './routes/SummaryRoutes.js'; // Adjust the path as necessary
+import summaryRoutes from './routes/summaryRoutes.js'; // Adjust the path as necessary
 import rateLimit from 'express-rate-limit'; // Import
 import { errorHandler } from './middleware/errorMiddleware.js';
 
