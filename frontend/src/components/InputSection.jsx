@@ -13,7 +13,7 @@ export default function InputSection({ transcript, setTranscript, prompt, setPro
         placeholder="Paste your meeting transcript here..."
         value={transcript}
         onChange={(e) => setTranscript(e.target.value)}
-        rows={10}
+        rows={10} // Reduced for better initial fit
       />
       <div className="quick-actions">
         {quickActions.map((action) => (
@@ -24,7 +24,7 @@ export default function InputSection({ transcript, setTranscript, prompt, setPro
       </div>
       <input
         type="text"
-        placeholder="Ask something… e.g., Summarize in bullets, Highlight action items"
+        placeholder="Or, enter your custom instruction here..."
         value={prompt}
         onChange={(e) => setPrompt(e.target.value)}
       />

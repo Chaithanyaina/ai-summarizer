@@ -1,5 +1,9 @@
 // frontend/src/components/SummaryDisplay.jsx
-export default function SummaryDisplay({ summary, setSummary, recipientEmail, setRecipientEmail, handleShareSummary }) {
+export default function SummaryDisplay({ 
+  summary, setSummary, 
+  recipientEmail, setRecipientEmail, 
+  handleShareSummary
+}) {
   return (
     <div className="summary-box card">
       <h2>Generated Summary <span className="editable-pill">Editable</span></h2>

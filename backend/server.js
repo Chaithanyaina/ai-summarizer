@@ -1,13 +1,14 @@
-// backend/server.js
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import summaryRoutes from './routes/summaryRoutes.js'; // Adjust the path as necessary
-import rateLimit from 'express-rate-limit'; // Import
+import rateLimit from 'express-rate-limit';
+import summaryRoutes from './routes/summaryRoutes.js';
 import { errorHandler } from './middleware/errorMiddleware.js';
+import connectDB from './config/db.js'; // Import connectDB
 
-// Load environment variables
 dotenv.config();
+
+connectDB(); // Connect to MongoDB
 
 const app = express();
 const PORT = process.env.PORT || 5001;
