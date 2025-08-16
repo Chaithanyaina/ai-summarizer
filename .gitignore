@@ -1,0 +1,52 @@
+# ## General ###
+
+# Dependencies
+# These folders contain all the downloaded libraries for your project.
+# They can be very large and should always be re-installed using `npm install`.
+/node_modules
+/frontend/node_modules
+/backend/node_modules
+
+# Environment Variables
+# These files contain sensitive information like API keys, database URIs,
+# and email passwords. NEVER commit these to version control.
+# It's a best practice to create a `.env.example` file that lists the
+# required variables without their values.
+.env
+.env.*
+!.env.example
+
+# ## Frontend Specific (Vite/React) ###
+
+# Build output
+/frontend/dist
+
+# Vite cache
+/frontend/.vite/
+
+# Test coverage
+/frontend/coverage
+
+# ## Backend Specific (Node.js) ###
+
+# Logs
+# Log files can contain sensitive information and grow very large.
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ## OS / Editor Specific ###
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# JetBrains (WebStorm, etc.)
+.idea/
